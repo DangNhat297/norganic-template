@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+</head>
+<!-- 
+  _   _                              _____                    _   _ _           _   
+ | \ | |                            |  __ \                  | \ | | |         | |  
+ |  \| | __ _ _   _ _   _  ___ _ __ | |  | | __ _ _ __   __ _|  \| | |__   __ _| |_ 
+ | . ` |/ _` | | | | | | |/ _ \ '_ \| |  | |/ _` | '_ \ / _` | . ` | '_ \ / _` | __|
+ | |\  | (_| | |_| | |_| |  __/ | | | |__| | (_| | | | | (_| | |\  | | | | (_| | |_ 
+ |_| \_|\__, |\__,_|\__, |\___|_| |_|_____/ \__,_|_| |_|\__, |_| \_|_| |_|\__,_|\__|
+         __/ |       __/ |                               __/ |                      
+        |___/       |___/                               |___/                       
+-->
+<body id="style-15">
+    <!-- start header -->
+    <header>
+        <div class="header-start">
+            <div id="container">
+                <section class="head-start">
+                    <span style="font-weight: 700;">Chào mừng đến với cửa hàng của chúng tôi !</span>
+                    <div>
+                        <span style="padding-right: 5px;margin-right: 5px;">
+                            <span style="color: #fff"><i class="fas fa-user"></i> </span> Đăng nhập / Đăng ký
+                        </span>
+                         <i class="fas fa-globe-europe"></i>
+                        <select>
+                            <option>Tiếng Việt</option>
+                            <option>Tiếng Anh</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div>
+            <div id="container">
+                <section class="header-mid">
+                    <img src="img/logo.png">
+                    <span class="user"><i class="fas fa-user"></i></span>
+                    <form>
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm" required>
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                    <span style="font-weight: 700;">
+                        <span style="padding-right: 10px;">
+                            <span style="color: var(--green)"> <i class="fas fa-mobile-alt"></i> </span> 0123.456.789
+                        </span>
+                        <span>
+                            <span style="color: var(--green)"> <i class="fas fa-envelope-open-text"></i> </span> admin@norganic.com
+                        </span>
+                    </span>
+                </section>
+                
+            </div>
+        </div>
+    </header>
+    <div class="menu-sticky">
+        <div id="container">
+            <section class="header-end">
+                <input id="checkNav" type="checkbox"/>
+                <label for="checkNav"><i class="fas fa-align-justify"></i></label>
+                <nav>
+                    <ul>
+                        <li><a href="trangchu.html"><i class="fas fa-house-damage"></i> Trang Chủ</a></li>
+                        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                        <li class="active"><a href="sanpham.html"><label for="dropdown-child">Sản Phẩm</label> <span style="font-size: small;"><i class="fas fa-chevron-down"></i></span></a>
+                            <input type="checkbox" id="dropdown-child"/>
+                            <ul class="dropdown">
+                                <li><a href="sanpham.html">Xem tất cả sản phẩm</a></li>
+                                <li>Rau củ</li>
+                                <li>Hoa quả</li>
+                                <li>Hải sản</li>
+                                <li>Các loại hạt</li>
+                                <li>Thực phẩm tươi sống</li>
+                            </ul>
+                        </li>
+                        <li><a href="tintuc.html">Tin Tức</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <img src="img/logo.png" class="logo-reponsive">
+                <div class="cart">
+                    <label for="cart"><i class="fas fa-cart-plus"></i></label>
+                    <input type="checkbox" id="cart">
+                    <div>Giỏ hàng của bạn đang trống</div>
+                    <sup>0</sup>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end header -->
+    <main>
+        <!-- breadcrumb -->
+        <section class="bg-breadcrumb">
+            <p>Sản phẩm</p>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li aria-current="page">Sản phẩm</li>
+            </ol>
+        </section>
+        <!-- end breadcrumb -->
+        <p class="title">Sản phẩm</p>
+        <div id="container">
+            <section class="product-page">
+                <div data-aos="fade-right">
+                    <div class="result-product">
+                        <p>Có 29 sản phẩm tìm thấy</p>
+                        <select>
+                            <option selected disabled>Sắp xếp theo: </option>
+                            <option>Mới nhất</option>
+                            <option>Phổ biến nhất</option>
+                            <option>Lượt mua nhiều nhất</option>
+                            <option>Lướt đánh giá cao nhất</option>
+                            <option>Giá từ thấp đến cao</option>
+                            <option>Giá từ cao đến thấp</option>
+                        </select>
+                    </div>
+                    <div class="list-product">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-name">Sản Phẩm 1</div>
+                                <div class="product-price">30.000đ</div>
+                                <div class="product-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="sale">Sale</div>
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-name">Sản Phẩm 1</div>
+                                <div class="product-price">30.000đ</div>
+                                <div class="product-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-name">Sản Phẩm 1</div>
+                                <div class="product-price">30.000đ</div>
+                                <div class="product-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-name">Sản Phẩm 1</div>
+                                <div class="product-price">30.000đ</div>
+                                <div class="product-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="sale">Sale</div>
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-name">Sản Phẩm 1</div>
+                                <div class="product-price">30.000đ</div>
+                                <div class="product-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-name">Sản Phẩm 1</div>
+                                <div class="product-price">30.000đ</div>
+                                <div class="product-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- pagination -->
+                    <ul class="pagination">
+                        <li><i class="fas fa-chevron-left"></i></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li><i class="fas fa-chevron-right"></i></li>
+                    </ul>
+                    <!-- end pagination-->
+                </div>
+                <div class="filter">
+                    <div class="filter-search" data-aos="fade-up-right">
+                        <div class="filter-title"><i class="fas fa-search"></i> Tìm kiếm sản phẩm</div>
+                        <form>
+                            <div class="simple-search">
+                                <input type="text" placeholder="Nhập tên sản phẩm..." required/>
+                                <button>Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-price" data-aos="fade-down-right">
+                        <div class="filter-title"><i class="fas fa-search"></i> Tìm kiếm theo khoảng giá</div>
+                        <form>
+                            <div class="simple-search">
+                                <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+                                <p style="margin-bottom: 10px;">0 - 500.000</p>
+                                <button>Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-category" data-aos="flip-left">
+                        <div class="filter-title"><i class="fas fa-search"></i> Danh mục sản phẩm</div>
+                        <form>
+                            <div class="simple-search">
+                                <div><input type="checkbox" >Rau củ</div>
+                                <div><input type="checkbox" >Hoa quả</div>
+                                <div><input type="checkbox" >Hải sản</div>
+                                <div><input type="checkbox" >Các loại hạt</div>
+                                <div><input type="checkbox" >Thực phẩm tươi sống</div>
+                                <div><input type="checkbox" >Khác</div>
+                                <button>Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="best-seller" data-aos="flip-up">
+                        <div class="filter-title"><i class="fas fa-medal"></i> Sản phẩm bán chạy</div>
+                        <ul>
+                            <li>
+                                <img src="img/product2.jpg">
+                                <div>
+                                    <p>Sản phẩm bán chạy 1</p>
+                                    <p class="price">30.000đ</p>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/product3.jpg">
+                                <div>
+                                    <p>Sản phẩm bán chạy 1</p>
+                                    <p class="price">30.000đ</p>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/product4.jpg">
+                                <div>
+                                    <p>Sản phẩm bán chạy 1</p>
+                                    <p class="price">30.000đ</p>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/product1.jpg">
+                                <div>
+                                    <p>Sản phẩm bán chạy 1</p>
+                                    <p class="price">30.000đ</p>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="featured-product" data-aos="flip-down">
+            <div id="container">
+                <p class="title">Sản Phẩm Yêu Thích</p>
+                <div class="ft_product">
+                    <div class="btn-move">
+                        <button>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="onfeatured">Yêu thích</div>
+                    <img src="img/feature_product.jpg">
+                    <div class="ft-detail">
+                        <div class="ft-detail_name">
+                            <p>Cam sành tiền giang</p>
+                            <span class="price">50.000đ <del>65.000đ</del></span>
+                            <div style="color: rgb(224, 202, 0);margin: 15px 0;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="ft-detail_description">
+                            <span>Trái cây tươi ngon sạch bổ dưỡngCam sành là loại trái cây vốn được nhiều người yêu thích, đặc biệt là trẻ nhỏ và chị em phụ nữ, bởi cam rất bổ dưỡng và cao cấp. Trái cam sành có đặc điểm mang màu xanh sậm đến khi chín thì ngả màu vàng, dáng tròn dẹt, hương vị chua ngọt, thị trái nhiều nước. Một đặc điểm nữa đó là cam sành có khá nhiều hạt nên thường được dùng phổ biến để vắt cam.</span>
+                            <div class="ft-btn">
+                                <button class="ft-btn_buy">Mua ngay <i class="fas fa-shopping-cart"></i></button>
+                                <button class="ft-btn_add-cart">Thêm vào giỏ <i class="fas fa-shopping-basket"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-subemail" data-aos="zoom-in">
+            <div id="container">
+                <section>
+                    <p>Đăng ký nhận tin khuyến mãi</p>
+                    <form>
+                        <div class="subscribe-form">
+                            <input type="email" class="subscribe-form-input" placeholder="Enter your email" required/>
+                            <button class="subscribe-form-button">Đăng ký</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="custom-shape-divider-bottom-1623254339">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div id="container">
+            <section class="footer" data-aos="zoom-out">
+                <div class="col2" style="overflow: hidden;">
+                    <input type="checkbox" id="allowFooter1">
+                    <p>Liên hệ <label for="allowFooter1"><i class="fas fa-angle-right"></i></label></p>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> FPT Polytechnic, Trịnh Văn Bô, Nam Từ Liêm, HN</li>
+                        <li><i class="fas fa-phone-alt"></i> 0123.456.789</li>
+                        <li><i class="far fa-envelope-open"></i> norganic@gmail.com</li>
+                        <li><img src="img/bocongthuong.png" style="width:50%;margin-top: 10px;" /></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <input type="checkbox" id="allowFooter2">
+                    <p>Liên kết nhanh <label for="allowFooter2"><i class="fas fa-angle-right"></i></label></p>
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Liên hệ</li>
+                        <li>Tin tức</li>
+                        <li>Sản phẩm</li>
+                    </ul>
+                </div>
+                <div class="col4">
+                    <input type="checkbox" id="allowFooter3">
+                    <p>Thông tin <label for="allowFooter3"><i class="fas fa-angle-right"></i></label></p>
+                    <ul>
+                        <li>Giới thiệu cửa hàng</li>
+                        <li>Chính sách bảo mật</li>
+                        <li>Điều khoản dịch vụ</li>
+                        <li>Hình thức thanh toán</li>
+                        <li>Cookie</li>
+                    </ul>
+                </div>
+                <div class="col1">
+                    <img src="img/logo.png">
+                    <span>
+                        Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng...
+                    </span>
+                    <br/>
+                    <ul class="social-share">
+                        <li class="social-item social-item--facebook">
+                          <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li class="social-item social-item--twitter">
+                          <i class="fab fa-twitter"></i>
+                        </li>
+                        <li class="social-item social-item--telegram">
+                          <i class="fab fa-telegram"></i>
+                        </li>
+                        <li class="social-item social-item--linkedin">
+                          <i class="fab fa-linkedin"></i>
+                        </li>
+                      </ul>
+                </div>
+            </section>
+        </div>
+        <div class="copyright">
+            © 2021 - Bản quyền thuộc về <b>Nguyễn Đăng Nhật</b>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
